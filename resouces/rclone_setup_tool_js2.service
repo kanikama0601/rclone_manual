@@ -1,0 +1,19 @@
+[Unit]
+Description=rclone setup tool for js2
+Documentation=
+After=networking.service
+
+[Service]
+Type=simple
+User=kanikama0601
+Group=kanikama0601
+TimeoutStartSec=0
+Restart=on-failure
+RestartSec=30s
+#ExecStartPre=
+ExecStart=/usr/bin/rclone_setup_tool_js2.sh
+SyslogIdentifier=Diskutilization
+#ExecStop=
+
+[Install]
+WantedBy=multi-user.target
