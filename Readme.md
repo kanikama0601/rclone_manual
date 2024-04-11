@@ -33,6 +33,7 @@ rclone config
 /usr/bin/  
 にshファイルを配置  
 
+### 5.ファイルの起動  
 ```
 systemctl start auto_git_tool.service  
 ```
